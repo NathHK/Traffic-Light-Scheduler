@@ -35,3 +35,7 @@ Using the equation *cost = t^2*, where *t* := time, we can compare the cost of t
 ## Print Statements
 
 The program includes various **print**/**printf** statements to visualize the state of the intersection, as well as to provide a cost comparison when the user chooses to run multiple schedulers (currently allows for those of Part 1 and Part 2). 
+
+## License
+
+This work is published under the **GNU General Public License v3.0**.
