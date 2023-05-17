@@ -18,15 +18,6 @@ Similar to Part 1, the scheduler moves one direction at a time. However, it allo
 
 1. Check direction. If a car is waiting, start moving it through the intersection (cost: 500 ms).
 2. While the car from (1) is moving through the intersection, check that direction's buffer. If a car is waiting, wait 50 ms and then move it through (cost: 500 ms). Repeat (1) and (2) until there are no cars left in that direction. 
-
-## Part 3: Parallel Round-robin Scheduler ***\*NOT IMPLEMENTED\****
-
-This is the logical next-step of the prior scheduler formats and provides the most efficiency. Cars moving in *parallel* directions do not need to wait for 500 ms to elapse before entering the intersection, but cars moving in *perpendicular* directions always need to wait 500 ms before passing (otherwise, a collission would occur). By modifying the scheduler from Part 2, we allow cars moving in parallel but opposite directions to pass simultaneously:
-
-1. Check direction. If a car is waiting, start moving it through the intersection (cost: 500 ms).
-2. While the car from (1) is moving through, check:
-    1. The parallel but opposite direction. If there is a car waiting, move it through the intersection (cost: 500 ms). 
-    2. The same direction. If a car is waiting, wait 50 ms and then move it through (cost: 500 ms). Repeat (1) and (2) until there are no cars left in the two directions.
   
 ## Cost Function
 
